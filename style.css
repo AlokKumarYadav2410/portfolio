@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-text);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00b8e6;
+}
+
+/* Navigation Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: var(--space-sm) var(--space-xl);
+    background: rgba(10, 10, 10, 0.247);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition-normal);
+    min-height: 70px;
+}
+
+.nav-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: var(--transition-normal);
+    cursor: pointer;
+}
+
+#name:hover {
+    transform: translateY(-1px);
+}
+
+.status-indicator {
+    font-size: 0.75rem;
+    color: #00ff88;
+    font-weight: 500;
+    opacity: 0.8;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.status-indicator::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: #00ff88;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    list-style: none;
+}
+
+#nav-links li {
+    list-style: none;
+    font-size: 20px;
+}
+
+#nav-links .nav-icons {
+    transform: scale(1.1);
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #FBBF24;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav-links a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+i {
+    transition: all 0.3s ease-in-out;
+}
+
+i:hover {
+    /* color: #FBBF24; */
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
