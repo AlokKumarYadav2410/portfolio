@@ -449,6 +449,196 @@
     margin-bottom: var(--space-xs);
 }
 
+/* Section CTA */
+.section-cta {
+    text-align: center;
+    padding: var(--space-2xl);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+.section-cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+    color: var(--primary-text);
+}
+
+.section-cta p {
+    color: var(--secondary-text);
+    margin-bottom: var(--space-lg);
+}
+
+/* Experience Section */
+.experience-section {
+    padding: var(--space-2xl) var(--space-xl);
+    position: relative;
+}
+
+.experience-timeline {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.experience-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: var(--space-xl);
+    transition: var(--transition-normal);
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(0, 212, 255, 0.3);
+}
+
+.experience-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: var(--space-lg);
+    gap: var(--space-md);
+}
+
+.experience-title-group {
+    flex: 1;
+}
+
+.experience-role {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    margin-bottom: var(--space-xs);
+}
+
+.experience-company {
+    font-size: 1.125rem;
+    color: var(--accent-text);
+    font-weight: 600;
+    margin: 0;
+}
+
+.experience-badge {
+    padding: 0.5rem 1rem;
+    background: rgba(0, 212, 255, 0.15);
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    color: var(--accent-text);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.experience-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--secondary-text);
+    font-size: 0.95rem;
+}
+
+.meta-item i {
+    color: var(--accent-text);
+}
+
+.experience-description {
+    color: var(--secondary-text);
+    margin-bottom: var(--space-lg);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.experience-highlights {
+    margin-bottom: var(--space-lg);
+}
+
+.experience-highlights h4 {
+    color: var(--primary-text);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.875rem;
+    color: var(--accent-text);
+}
+
+.highlights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlights-list li {
+    color: var(--secondary-text);
+    padding: var(--space-xs) 0;
+    padding-left: var(--space-lg);
+    position: relative;
+    line-height: 1.8;
+}
+
+.highlights-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-text);
+    font-weight: 600;
+}
+
+.experience-tech {
+    margin-bottom: var(--space-lg);
+}
+
+.experience-tech h4 {
+    color: var(--accent-text);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.tech-item {
+    padding: 0.4rem 0.8rem;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: var(--accent-text);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.experience-outcome {
+    color: var(--secondary-text);
+    line-height: 1.8;
+    font-style: italic;
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
