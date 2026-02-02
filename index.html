@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alok Kumar Yadav - Web Developer Portfolio</title>
+    <link rel="icon" href="/public/favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="modern-styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="theme.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,11 +87,16 @@
                     <i class="ri-rocket-line"></i>
                     View My Work
                 </a>
-                <a href="https://github.com/AlokKumarYadav2410/web-development-tasks" target="_blank"
+                <button id="resumeBtn" class="btn btn-secondary">
+                    <i class="ri-download-line"></i>
+                    Download Resume
+                </button>
+                <a href="/public/Alok_Kumar_Yadav_Resume.pdf" target="_blank"
                     class="btn btn-secondary">
-                    <i class="ri-github-line"></i>
-                    GitHub Repository
+                    <i class="ri-eye-line"></i>
+                    View Resume
                 </a>
+
             </div>
         </div>
         <div class="hero-visual">
@@ -124,6 +131,255 @@
                         <span>Responsive</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Projects Section -->
+    <section id="featured-projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">Showcasing my best work with advanced techniques and modern design</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="../images/MainImages/freakish.png" alt="Freakish Mind NFT Landing Page"
+                            loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="Challenges/Challenge03/index.html" target="_blank" class="link-btn">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="https://github.com/AlokKumarYadav2410/web-development-tasks/tree/main/Challenges/Challenge03"
+                                    target="_blank" class="link-btn">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Freakish Mind</h3>
+                            <div class="project-badge">Featured</div>
+                        </div>
+                        <p class="project-description">
+                            Advanced NFT-themed landing page featuring full responsiveness,
+                            hover effects, clip-path animations, and modern UI/UX design.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
+                            <span class="tech-tag">Animations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/nothing.png" alt="Nothing Brand Landing Page" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://web-development-tasks-qpze.vercel.app/" target="_blank"
+                                    class="link-btn">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="https://github.com/AlokKumarYadav2410/web-development-tasks" target="_blank"
+                                    class="link-btn">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Nothing Landing Page</h3>
+                        </div>
+                        <p class="project-description">
+                            Minimalist landing page inspired by Nothing brand aesthetics,
+                            emphasizing clean design and modern UI/UX principles.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
+                            <span class="tech-tag">Minimalist UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/apple.png" alt="Apple Website Clone" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://web-development-tasks.vercel.app/" target="_blank" class="link-btn">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="https://github.com/AlokKumarYadav2410/web-development-tasks/tree/main/Task04-ApplePage"
+                                    target="_blank" class="link-btn">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Apple Website Clone</h3>
+                        </div>
+                        <p class="project-description">
+                            Pixel-perfect recreation of Apple's website featuring modern layout,
+                            navigation system, and brand-consistent design elements.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
+                            <span class="tech-tag">Brand Clone</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/kung_fu_panda.png" alt="Kung Fu Panda Interactive Gallery" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="./Practice/P1-SASS/index.html" target="_blank" class="link-btn">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="https://github.com/AlokKumarYadav2410/web-development-tasks/tree/main/Practice/P1-SASS"
+                                    target="_blank" class="link-btn">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Kung Fu Panda Gallery</h3>
+                        </div>
+                        <p class="project-description">
+                            Interactive gallery featuring SCSS preprocessing, smooth animations,
+                            and responsive design with playful character presentations.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">SCSS</span>
+                            <span class="tech-tag">Animations</span>
+                            <span class="tech-tag">Interactive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/gridverse.png" alt="Gridverse Superhero Layout" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="Task06/index.html" target="_blank" class="link-btn">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="https://github.com/AlokKumarYadav2410/web-development-tasks/tree/main/Task06"
+                                    target="_blank" class="link-btn">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">Gridverse Heroes</h3>
+                        </div>
+                        <p class="project-description">
+                            Superhero-themed website showcasing CSS Grid mastery with
+                            modern character presentations and responsive layouts.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">Responsive</span>
+                            <span class="tech-tag">Theme Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/theGarage.png" alt="The Garage Luxury Cars" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="./Task05-TheGarage/index.html" target="_blank" class="link-btn">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="https://github.com/AlokKumarYadav2410/web-development-tasks/tree/main/Task05-TheGarage"
+                                    target="_blank" class="link-btn">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">The Garage</h3>
+                        </div>
+                        <p class="project-description">
+                            Luxury automotive showcase featuring elegant card layouts,
+                            premium branding, and sophisticated design aesthetics.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Card Design</span>
+                            <span class="tech-tag">Luxury UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/cleanpro.png" alt="CleanPro Landing Page" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://challenge-01-three.vercel.app/" target="_blank" class="link-btn">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="https://github.com/AlokKumarYadav2410/web-development-tasks/tree/main/Challenges/Challenge01"
+                                    target="_blank" class="link-btn">
+                                    <i class="ri-code-s-slash-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-title">CleanPro Landing</h3>
+                        </div>
+                        <p class="project-description">
+                            Professional service landing page with conversion-focused design,
+                            clean layouts, and user experience optimization.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Landing Page</span>
+                            <span class="tech-tag">UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="section-cta">
+                <h3>Explore All Projects</h3>
+                <p>View detailed documentation and source code for each project</p>
+                <a href="https://github.com/AlokKumarYadav2410" target="_blank"
+                    class="btn btn-outline">
+                    <i class="ri-github-line"></i>
+                    View Repository
+                </a>
             </div>
         </div>
     </section>
