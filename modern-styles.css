@@ -639,6 +639,70 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Footer */
+.footer {
+    padding: var(--space-xs) var(--space-xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-info h3 {
+    margin-bottom: var(--space-sm);
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-info p {
+    color: var(--secondary-text);
+    margin-bottom: var(--space-xs);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-block: var(--space-xl);
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--secondary-text);
+    text-decoration: none;
+    transition: var(--transition-normal);
+}
+
+.footer-links a:hover {
+    color: var(--accent-text);
+    border-color: var(--accent-text);
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: var(--shadow-glow);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--space-lg);
+}
+
+.footer-bottom p {
+    color: var(--secondary-text);
+    font-size: 0.875rem;
+    margin-bottom: var(--space-xs);
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
