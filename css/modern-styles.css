@@ -26,7 +26,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 90px var(--space-xl) var(--space-2xl);
+    padding: 120px var(--space-xl) var(--space-2xl);
     position: relative;
     overflow: hidden;
 }
@@ -45,7 +45,7 @@
 
 .hero-content {
     flex: 1;
-    max-width: 600px;
+    max-width: 800px;
     z-index: 2;
 }
 
@@ -139,8 +139,6 @@
     overflow: hidden;
 }
 
-
-
 .btn-primary {
     background: var(--gradient-accent);
     color: white;
@@ -193,7 +191,7 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    padding: var(--space-lg);
+    padding: var(--space-sm);
     backdrop-filter: blur(20px);
     animation: float 4s ease-in-out infinite;
     max-width: 300px;
@@ -467,6 +465,10 @@
 .section-cta p {
     color: var(--secondary-text);
     margin-bottom: var(--space-lg);
+}
+
+.section-cta a {
+    margin: 0 var(--space-xs);
 }
 
 /* Experience Section */
