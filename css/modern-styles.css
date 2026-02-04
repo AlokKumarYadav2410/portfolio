@@ -560,6 +560,32 @@
     color: var(--accent-text);
 }
 
+.experience-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.experience-card.expanded .experience-content {
+    max-height: 100%;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color, #4f46e5);
+    font-weight: 600;
+    margin-top: 12px;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+    color: var(--accent-text);
+}
+
 .experience-description {
     color: var(--secondary-text);
     margin-bottom: var(--space-lg);
