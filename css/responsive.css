@@ -1,3 +1,40 @@
+@media screen and (min-width: 1800px) {
+    .hero-content {
+        flex: 1;
+        max-width: 1000px;
+        z-index: 2;
+    }
+
+    .hero-description {
+        max-width: 1040px;
+    }
+
+    .floating-card {
+        max-width: 700px;
+        padding: var(--space-xl);
+    }
+
+    .card-content h4 {
+        color: var(--primary-text);
+        font-size: 2rem;
+    }
+
+    .card-content p {
+        color: var(--secondary-text);
+        font-size: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-xl);
+        justify-content: none;
+    }
+
+    .project-card {
+        max-width: 600px;
+    }
+}
+
 @media screen and (min-width: 769px) {
 
     .mobile-menu-btn {
@@ -334,6 +371,15 @@
         width: 100%;
         /* max-width: 350px; */
         margin: 0 auto;
+    }
+
+    .section-cta a {
+        margin: var(--space-xs) 0;
+    }
+
+    .experience-section {
+        padding: var(--space-2xl) 0;
+        position: relative;
     }
 
     .experience-timeline {
