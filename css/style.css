@@ -60,7 +60,7 @@ body {
 }
 
 #name {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     background: var(--gradient-accent);
     -webkit-background-clip: text;
@@ -117,7 +117,7 @@ body {
 
 #nav-links li {
     list-style: none;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #nav-links .nav-icons {
@@ -125,15 +125,24 @@ body {
 }
 
 #nav-links a {
+    display: inline-block;
     text-decoration: none;
-    color: #FBBF24;
+    /* color: var(--accent-text); */
     font-weight: 600;
+    background: linear-gradient(var(--accent-text) 30%, white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     transition: all 0.3s ease-in-out;
 }
 
 #nav-links a:hover {
-    color: #ffffff;
+    /* color: #ffffff; */
     transform: scale(1.2);
+    background: linear-gradient(white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 i {
@@ -284,4 +293,137 @@ i:hover {
 .skill-tag:hover {
     background: rgba(0, 212, 255, 0.2);
     border-color: var(--accent-text);
+}
+
+
+/* Learning Projects Section */
+.learning-section {
+    padding: var(--space-2xl) 0;
+    background: linear-gradient(135deg, rgba(17, 17, 17, 0.8) 0%, rgba(10, 10, 10, 0.9) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.learning-section::before {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 107, 107, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-xl);
+    position: relative;
+    z-index: 2;
+}
+
+.learning-card {
+    padding: var(--space-xl);
+    background: rgba(26, 26, 26, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: var(--transition-normal);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.learning-card::before,
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+    transition: left 0.3s ease;
+}
+
+.learning-card:hover,
+.project-card:hover {
+    background: rgba(26, 26, 26, 0.8);
+    border-color: rgba(0, 212, 255, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+}
+
+.learning-card:hover::before,
+.project-card:hover::before {
+    left: 100%;
+}
+
+.learning-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--gradient-accent);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.learning-card h3 {
+    font-size: 1.25rem;
+    color: var(--primary-text);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.learning-card p {
+    color: var(--secondary-text);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.learning-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    position: relative;
+    z-index: 1;
+}
+
+.learning-tags span {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: rgba(102, 126, 234, 0.2);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: rgba(102, 126, 234, 1);
+}
+
+.learning-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--accent-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-fast);
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+}
+
+.learning-link:hover {
+    gap: var(--space-md);
+    text-decoration: underline;
 }
