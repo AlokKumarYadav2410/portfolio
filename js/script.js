@@ -1,6 +1,13 @@
 // Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const navLinks = document.getElementById('nav-links');
+const title = document.getElementById('name');
+
+title.addEventListener('click', () => {
+    const a = document.createElement('a');
+    a.href = '../#hero';
+    a.click();
+});
 
 // Toggle mobile menu
 mobileMenuBtn.addEventListener('click', () => {
