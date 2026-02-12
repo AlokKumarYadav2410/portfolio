@@ -7,7 +7,7 @@
     --secondary-text: #a0a0a0;
     --accent-text: #00d4ff;
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-accent: linear-gradient(135deg, #00d4ff 0%, #090979 100%);
+    --gradient-accent: linear-gradient(135deg, #00d4ff 20%, #007bff 50%, #090979 100%);
     --gradient-warm: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
 
     /* Spacing */

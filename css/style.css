@@ -129,17 +129,19 @@ body {
     text-decoration: none;
     /* color: var(--accent-text); */
     font-weight: 600;
-    background: linear-gradient(var(--accent-text) 30%, white, white);
+    /* color: white; */
+    background: linear-gradient(white, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 #nav-links a:hover {
     /* color: #ffffff; */
-    transform: scale(1.2);
-    background: linear-gradient(white, white);
+    transform: scale(1.1);
+    transform: rotate(360deg);
+    background: var(--gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -426,4 +428,42 @@ i:hover {
 .learning-link:hover {
     gap: var(--space-md);
     text-decoration: underline;
+}
+
+.back-vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    mix-blend-mode: lighten;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-vid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-vid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.gradient {
+    background: linear-gradient(to right, #008baa, #7e42a7, #6070fd, #2a46ff, #0099ff, #008baa);
+    /* background: linear-gradient(to right, #ff6b6b, #a77342, #ffd93d, #ffbf2a, #ff00a6, #ff6b6b); */
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
 }
