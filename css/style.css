@@ -140,7 +140,8 @@ body {
 #nav-links a:hover {
     /* color: #ffffff; */
     transform: scale(1.1);
-    transform: rotate(360deg);
+    transform: rotate(-10deg);
+    /* transform: translateY(-5px); */
     background: var(--gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
